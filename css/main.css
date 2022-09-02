@@ -983,7 +983,7 @@ a {
   margin-top: 9px;
 }
 
-.address__link {
+.address__link.list {
   color: var(--white-fontcolor);
 }
 
