@@ -1,0 +1,55 @@
+.clients {
+  background-color: var(--main-backgroundcolor);
+
+  &__title {
+    margin-bottom: 50px;
+
+    @include font(700, 28px, 1.18, 0.03em);
+    text-align: center;
+    color: var(--main-blackcolor);
+  }
+}
+
+.clients-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+
+  &__icon {
+    fill: currentColor;
+  }
+
+  &__item {
+    display: block;
+    width: calc((100% - 30px) / 2);
+
+    @include tablet {
+      width: calc((100% - 60px) / 3);
+    }
+
+    @include desktop {
+      width: calc((100% - 150px) / 6);
+    }
+  }
+}
+
+.clients-list__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  height: 92px;
+  border: 1px solid var(--icon-color);
+  border-radius: 4px;
+  color: var(--icon-color);
+  background-color: var(--main-backgroundcolor);
+
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+    border-color: var(--accent-color);
+  }
+}

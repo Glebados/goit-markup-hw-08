@@ -1,0 +1,18 @@
+body {
+  font-family: $mainFont, sans-serif;
+  font-style: normal;
+  letter-spacing: 0.03em;
+  background-color: var(--main-backgroundcolor);
+  color: var(--main-blackcolor);
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  text-decoration: none;
+  color: var(--main-blackcolor);
+}
