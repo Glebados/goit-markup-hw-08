@@ -29,6 +29,18 @@
     text-transform: uppercase;
     text-align: center;
   }
+
+  @include tablet {
+    &__title {
+      text-align: left;
+    }
+  }
+
+  @include desktop {
+    &__title {
+      text-align: left;
+    }
+  }
 }
 
 .features-list__item {
