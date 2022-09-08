@@ -75,8 +75,14 @@ ul {
 }
 
 .section {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+@media screen and (min-width: 1200px) {
+  .section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 body {
@@ -391,7 +397,7 @@ a {
 }
 @media screen and (min-width: 1200px) {
   .hero {
-    width: 1600px;
+    max-width: 1600px;
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/hero-img-1600.jpg);
     padding-top: 200px;
     padding-bottom: 200px;
@@ -543,7 +549,13 @@ a {
   font-size: 28px;
   line-height: 1.18;
   text-align: center;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
+}
+@media screen and (min-width: 1200px) {
+  .team__title {
+    font-size: 36px;
+    margin-bottom: 50px;
+  }
 }
 
 .team-list {
@@ -617,13 +629,19 @@ a {
   background-color: var(--main-backgroundcolor);
 }
 .clients__title {
-  margin-bottom: 50px;
+  margin-bottom: 30px;
   font-weight: 700;
   font-size: 28px;
   line-height: 1.18;
   letter-spacing: 0.03em;
   text-align: center;
   color: var(--main-blackcolor);
+}
+@media screen and (min-width: 1200px) {
+  .clients__title {
+    font-size: 36px;
+    margin-bottom: 50px;
+  }
 }
 
 .clients-list {
@@ -800,8 +818,6 @@ a {
 }
 
 .footer {
-  padding-top: 60px;
-  padding-bottom: 60px;
   background-color: var(--accent-background);
 }
 .footer > .container {
@@ -1035,7 +1051,7 @@ a {
 @media screen and (min-width: 1200px) {
   .modal-hero {
     width: 528px;
-    hieght: 561px;
+    height: 581px;
   }
 }
 
